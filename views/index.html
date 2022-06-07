@@ -18,28 +18,40 @@
       <hr />
       <main role="main" class="main">
         <p>
-          A little Node/Express API that returns a timestamp for a given URL
-          param date string And a UTC date string for a given timestamp URL
-          param
+          A little Node/Express API that converts UTC date to UNIX timestamp and
+          UNIX timestamp to UTC date
         </p>
-
-        <h3>Example Usage:</h3>
+        <h3>How to use it :</h3>
         <ul>
           <li>
-            <p>With a date string URL param:</p>
+            <p>
+              Make a request to /api/ route with a UTC date or a UNIX timestamp
+              as the URL <span class="value">[param-to-convert]</span> :
+            </p>
+
+            <pre>Example of usage:
+https://baseUrl/api/<span class="value">[param-to-convert]</span>
+</pre>
+          </li>
+        </ul>
+
+        <h3>Example Usage :</h3>
+        <ul>
+          <li>
+            <p>With a date string URL param :</p>
             <a href="api/2015-12-25" target="_blank"
-              >https://node-express-timestamp-microservice.sebastiennoret.repl.co//api/2015-12-25</a
+              >https://node-express-timestamp-microservice.sebastiennoret.repl.co/api/2015-12-25</a
             >
           </li>
           <li>
-            <p>With a timestamp string URL param:</p>
+            <p>With a timestamp string URL param :</p>
             <a href="api/1451001600000" target="_blank"
-              >https://node-express-timestamp-microservice.sebastiennoret.repl.co//api/1451001600000</a
+              >https://node-express-timestamp-microservice.sebastiennoret.repl.co/api/1451001600000</a
             >
           </li>
         </ul>
 
-        <h3>Example Output:</h3>
+        <h3>Example Output :</h3>
 
         <pre>
 <span class="bracket">{</span> 
