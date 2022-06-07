@@ -1,11 +1,13 @@
 /****** Main Styling ******/
 :root {
   --white: #fffffa;
-  --light-grey: #beb7a4;
-  --dark-grey: #fffffc;
-  --black: #000000;
-  --orange: #ff7f11;
-  --red: #ff1b1c;
+
+  --bgc: #32021f;
+  --code: black;
+  --typo: #fff;
+  --link: #ec9a29;
+  --link-hover: #77a0a9;
+  --container: #4b2e39;
 }
 *,
 *::after,
@@ -18,9 +20,9 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #222;
-  background-color: var(--black);
+  background-color: var(--bgc);
   text-align: center;
-  line-height: 1.4em;
+  line-height: 1.4rem;
 }
 h1,
 h3 {
@@ -33,9 +35,10 @@ h3 {
   border-radius: 5px;
   margin-top: 8vh;
   margin-bottom: 8vh;
-  color: var(--black);
+  color: var(--typo);
   font-size: 1.2rem;
-  background-color: var(--dark-grey);
+  background-color: var(--container);
+  box-shadow: 1px 1px 25px black;
 }
 
 .main {
@@ -65,7 +68,7 @@ code {
   font-family: monospace;
   padding: 1rem;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--code);
 }
 
 ul {
@@ -74,16 +77,13 @@ ul {
   border-radius: 5px;
 }
 
-li {
-  /* margin-bottom: 0.5em; */
-}
-
 a {
-  color: blue;
+  color: var(--link);
   font-weight: bold;
   transition: all 200ms ease-in;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: var(--orange);
+  color: var(--link-hover);
 }
