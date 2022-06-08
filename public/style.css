@@ -1,4 +1,9 @@
 /****** Main Styling ******/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 :root {
   --bgc: #32021f;
 
@@ -8,11 +13,29 @@
   --container: #4b2e39;
   --margin-container: 8vh;
 }
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+
+/*****custom scrollbar******************************** */
+
+/******firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--link) var(--container);
 }
+/********** chrome edge safari */
+*::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--container);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--link);
+  border-radius: 25px;
+  border: 1px solid var(--container);
+}
+/**************************************************/
 body {
   margin: 0;
   padding: 0;
